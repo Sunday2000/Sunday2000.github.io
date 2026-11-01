@@ -24,11 +24,16 @@ npm run preview  # sert dist/ en local
 
 ## SEO
 
+- `public/.htaccess` : HTTPS, cache et compression sur un hébergement Apache.
 - Chaque langue a sa propre URL indexable : `/` (anglais) et `/fr/` (français), reliées par `hreflang`.
 - Les captures sont servies en WebP (`public/assets/*.webp`) ; les PNG d'origine ne sont plus référencés.
 - Après une modification du contenu, mettez à jour `lastmod` dans `public/sitemap.xml` et `dateModified` dans le JSON-LD de `index.html`.
 
 ## Déploiement
 
-Le site est hébergé sur GitHub Pages (https://sunday2000.github.io) : chaque push sur `main` lance le build et le déploiement (`.github/workflows/deploy.yml`).
-Pour changer d'adresse, remplacez `https://sunday2000.github.io` dans `src/seo.ts`, `index.html`, `public/sitemap.xml` et `public/robots.txt`.
+Adresse du site : https://sunday-kodonon.xedomi.com
+
+- **GitHub Pages** : chaque push sur `main` lance le build et le déploiement (`.github/workflows/deploy.yml`) ; le domaine est déclaré dans `public/CNAME`.
+- **Serveur Apache** : envoyez le contenu de `dist/` (fichier `.htaccess` compris) à la racine du sous-domaine.
+
+Pour changer d'adresse, remplacez `https://sunday-kodonon.xedomi.com` dans `src/seo.ts`, `index.html`, `public/sitemap.xml`, `public/robots.txt` et `public/CNAME`, puis régénérez `public/assets/og-image.jpg` (l'adresse y est écrite).

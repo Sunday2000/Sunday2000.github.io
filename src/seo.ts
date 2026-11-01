@@ -1,5 +1,5 @@
 // Métadonnées SEO par langue, partagées entre le rendu client (App) et le pré-rendu (scripts/prerender.mjs).
-export const SITE_URL = 'https://sunday2000.github.io';
+export const SITE_URL = 'https://sunday-kodonon.xedomi.com';
 
 export type Lang = 'en' | 'fr';
 
