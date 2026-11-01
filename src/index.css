@@ -1,0 +1,64 @@
+/* Styles globaux (polices, animations, resets) */
+html{scroll-behavior:smooth}
+body{margin:0;background:#F6F7F9;font-family:'Geist',system-ui,sans-serif;color:#151B27;-webkit-font-smoothing:antialiased}
+a{color:#2563EB;text-decoration:none}
+a:hover{color:#1D4ED8}
+img{display:block}
+button,input,textarea{font-family:inherit}
+::selection{background:#BFD3FB}
+@keyframes slabRock{0%{transform:rotateX(var(--rx)) rotateY(var(--ry)) rotateZ(-4deg)}
+100%{transform:rotateX(calc(var(--rx) * -0.6)) rotateY(calc(var(--ry) * -0.7)) rotateZ(5deg)}
+}
+@keyframes cubeFloat{0%,100%{transform:translateY(0)}
+50%{transform:translateY(-14px)}
+}
+@keyframes bob{0%,100%{transform:translateY(0)}
+50%{transform:translateY(6px)}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}
+*,*::before,*::after{animation:none!important;transition:none!important}
+}
+
+/* États :hover / :focus */
+.dc1:focus{top:12px !important;color:#fff !important}
+.dc2:hover{color:var(--acc,#2563EB) !important}
+.dc3:hover{border-color:#151B27 !important;color:#151B27 !important}
+.dc4:hover{filter:brightness(0.94) !important;color:#fff !important}
+.dc5:hover{filter:brightness(0.94) !important;color:#fff !important}
+.dc6:hover{border-color:#151B27 !important;color:#151B27 !important}
+.dc7:hover{background:#fff !important;color:var(--acc,#2563EB) !important}
+.dc8:hover{background:#fff !important;color:var(--acc,#2563EB) !important}
+.dc9:hover{background:#fff !important;color:var(--acc,#2563EB) !important}
+.dc10:hover{box-shadow:0 24px 48px -28px rgba(21,27,39,.35) !important}
+.dc11:hover{background:#EEF1F5 !important}
+.dc12:hover{background:#EEF1F5 !important}
+.dc13:hover{filter:brightness(0.94) !important}
+.dc14:hover{box-shadow:0 24px 48px -28px rgba(21,27,39,.35) !important}
+.dc15:hover{background:#EEF1F5 !important}
+.dc16:hover{background:#EEF1F5 !important}
+.dc17:hover{text-decoration:underline !important}
+.dc18:hover{background:#fff !important;border-color:#E6E9EE !important}
+.dc19:hover{opacity:1 !important}
+.dc20:hover{filter:brightness(0.94) !important}
+.dc21:hover{transform:translateY(-4px) !important;box-shadow:0 20px 50px -18px rgba(21,27,39,.22) !important}
+.dc22:hover{filter:brightness(0.94) !important}
+.dc23:hover{border-color:#151B27 !important;color:#151B27 !important}
+.dc24:hover{background:var(--acc,#2563EB) !important;color:#fff !important}
+.dc25:hover{border-color:#151B27 !important}
+.dc26:hover{border-color:#151B27 !important}
+.dc27:focus{border-color:#2563EB !important;box-shadow:0 0 0 3px rgba(37,99,235,.15) !important}
+.dc28:focus{border-color:#2563EB !important;box-shadow:0 0 0 3px rgba(37,99,235,.15) !important}
+.dc29:focus{border-color:#2563EB !important;box-shadow:0 0 0 3px rgba(37,99,235,.15) !important}
+.dc30:focus{border-color:#2563EB !important;box-shadow:0 0 0 3px rgba(37,99,235,.15) !important}
+.dc31:hover{filter:brightness(0.94) !important}
+.dc32:hover{background:#F3F5F8 !important;color:#151B27 !important}
+.dc33:hover{background:#F3F5F8 !important;color:#151B27 !important}
+.dc34:hover{border-color:#151B27 !important;color:#151B27 !important}
+.dc35:hover{border-color:#151B27 !important;color:#151B27 !important}
+.dc36:hover{color:#fff !important}
+.dc37:hover{color:#fff !important}
+.dc38:hover{color:#fff !important}
+.dc39:hover{background:#fff !important;color:#151B27 !important}
+.dc40:hover{color:#fff !important}
+.dc41:hover{filter:brightness(0.94) !important;color:#fff !important}
+.dc42:hover{filter:brightness(0.94) !important;color:#fff !important}
